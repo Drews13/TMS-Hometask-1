@@ -6,11 +6,10 @@
 .about__body {
   width: 1170px;
   margin-left: 171px;
-  padding: 50px 0 58px;
 }
 
 .about__header {
-  margin-bottom: 110px;
+  margin: 50px 0px 71px;
 }
 
 .about__title {
@@ -46,6 +45,10 @@
   text-align: center;
 }
 
+.about__footer {
+  margin-bottom: 58px;
+}
+
 .about__column {
   display: inline-block;
   vertical-align: top;
@@ -59,23 +62,13 @@
 .about-item__icon-container {
   box-sizing: border-box;
   margin: 0 auto;
-  width: 92px;
-  height: 92px;
-  border: 1px solid #EC7979;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.about-item__icon-bulb {
-  width: 65.29px;
-  height: 65.29px;
+  width: 170px;
+  height: 170px;
 }
 
 .about-item__title {
   box-sizing: border-box;
-  margin: 39px 0 8px 1px;
+  margin: 0px 0 8px 1px;
   padding: 38px 0;
   width: 369px;
   height: 100px;
