@@ -5,11 +5,11 @@
 
 .about__body {
   width: 1170px;
-  margin-left: 171px;
+  margin: 50px 0px 58px 171px;
 }
 
 .about__header {
-  margin: 50px 0px 71px;
+  margin-bottom: 71px;
 }
 
 .about__title {
@@ -43,10 +43,6 @@
   font-weight: 400;
   color: #86878B;
   text-align: center;
-}
-
-.about__footer {
-  margin-bottom: 58px;
 }
 
 .about__column {
