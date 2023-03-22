@@ -1,5 +1,5 @@
 .tabs__body {
-  max-width: 1170px;
+  /*max-width: 1170px;*/
   margin: 99px 170px 0px;
 }
   
@@ -15,6 +15,22 @@
   text-align: center;
 }
   
+.tabs__column_active {
+  border: 1px solid #C6CBCD;
+  border-bottom: none;
+  position: relative;
+}
+
+.tabs__column_active::after {
+  content: '';
+  width: 201px;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
 .tabs__content {
   border: 1px solid #C6CBCD;
   padding-top: 1px;
