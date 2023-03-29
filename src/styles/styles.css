@@ -2,12 +2,13 @@
 /*common styles*/
 /*_____________________*/
 .section-title {
-  padding: 57px 0;
-  height: 150px;
   box-sizing: border-box;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 2em;
   font-weight: 400;
-  text-align: center;
   position: relative;
 }
 
@@ -23,10 +24,11 @@
 
 .section-desc {
   margin: 40px 0 0 1px;
-  width: 1169px;
-  height: 21px;
-  padding: 1.5px 0;
   box-sizing: border-box;
+  height: 21px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1em;
   font-weight: 400;
   color: #86878B;
@@ -51,10 +53,12 @@
 .tabs__column {
   box-sizing: border-box;
   height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Open Sans";
   font-size: 14px;
   font-weight: 400;
-  padding: 13px;
   width: 203px;
   text-align: center;
 }
@@ -87,17 +91,18 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 0px 0px 54px 100px;
-  width: 570px;
 }
   
 .tabs__title {
   box-sizing: border-box;
   height: 124px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 570px;
   font-family: "Open Sans";
   font-size: 30px;
   font-weight: 700;
-  padding: 47px 0;
 }
   
 .tabs__desc {
@@ -108,9 +113,11 @@
   
 .tabs__button {
   box-sizing: border-box;
-  width: 270px;
+  max-width: 270px; 
   height: 58px;
-  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #EC7979;
   color: #FFF;
   border: none;
@@ -143,24 +150,22 @@
   justify-content: space-between;
 }
 
-.about__column {
+.about-column {
   width: 370px;
 }
 
 .about-column__icon-container {
-  box-sizing: border-box;
-  margin: 0 auto;
-  width: 170px;
-  height: 170px;
+  display: flex;
+  justify-content: center;
 }
 
 .about-column__title {
-  box-sizing: border-box;
   margin: 0px 0 8px 1px;
-  padding: 38px 0;
-  width: 369px;
+  box-sizing: border-box;
   height: 100px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 24px;
   font-weight: 700;
   font-family: "Open Sans";
@@ -184,7 +189,7 @@
 }
 
 .pricing {
-  width: 1170px;
+  max-width: 1170px;
 }
 
 .pricing__header {
