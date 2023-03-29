@@ -34,6 +34,26 @@
   color: #86878B;
   text-align: center;
 }
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EC7979;
+  color: #FFF;
+  border: none;
+  font-family: "Open Sans";
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: #AB4949;
+}
+
+.button:active {
+  background-color: #EC7979;
+  box-shadow: inset 0px 0px 10px #AB4949;
+}
 /*_____________________*/
 /*tabs section styles*/
 /*_____________________*/
@@ -115,14 +135,6 @@
   box-sizing: border-box;
   max-width: 270px; 
   height: 58px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #EC7979;
-  color: #FFF;
-  border: none;
-  font-family: "Open Sans";
-  font-weight: 600;
 }
 
 .tabs__img {
