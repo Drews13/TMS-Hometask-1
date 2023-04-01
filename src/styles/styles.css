@@ -347,11 +347,11 @@
 /*banner section styles*/
 /*_____________________*/
 
-.banner-wrapper-background {
+.banner-wrapper {
   background-image: url('../public/img/banner/banner.svg');
 }
 
-.banner-wrapper {
+.banner-wrapper-background {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 50px 170px;
 }
@@ -382,6 +382,80 @@
 }
 
 .banner__button {
+  width: 370px;
+  height: 58px;
+}
+
+/*_____________________*/
+/*contanct section styles*/
+/*_____________________*/
+
+.contact-wrapper {
+  padding: 50px 170px;
+}
+
+.contact {
+  max-width: 1170px;
+}
+
+.contact__header {
+  margin-bottom: 89px;
+}
+
+.contact__form {
+  height: 362px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact__inputs-container {
+  width: 1170px;
+  height: 214px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact__input {
+  box-sizing: border-box;
+  width: 571px;
+  height: 38px;
+  border: none;
+  border-bottom: 1px solid #BDBDBD;
+  outline: none;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19.07px;
+  padding-bottom: 19px;
+}
+
+.contact__input::placeholder {
+  color: #BDBDBD;
+}
+
+.contact__message {
+  height: 214px;
+  width: 569px;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid #BDBDBD;
+  outline: none;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19.07px;
+}
+
+.contact__message::placeholder {
+  color: #BDBDBD;
+}
+
+.contact__button {
   width: 370px;
   height: 58px;
 }
