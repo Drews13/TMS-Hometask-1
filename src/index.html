@@ -6,7 +6,48 @@
     <link rel="stylesheet" href="./styles/styles.css">
   </head>
   <body>
+    <header class="header">
+      <img src="./public/img/header/Logo.svg" class="header__logo">
+      <nav>
+        <ul class="header__link-list">
+          <li class="header__link">Features</li>
+          <li class="header__link">About</li>
+          <li class="header__link">Pricing</li>
+          <li class="header__link">Reviews</li>
+          <li class="header__link">Contact</li>
+        </ul>
+      </nav>
+    </header>
     <div class="content-wrapper">
+      <div class="main-banner-wrapper">
+        <div class="main-banner-wrapper__background">
+          <section class="main-banner">
+            <div class="main-banner__header">
+              <img src="./public/img/mainBanner/Logo.svg">
+              <h1 class="main-banner__title">
+                MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES
+              </h1>
+              <div class="main-banner__separator separator">
+              </div>
+              <p class="main-banner__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              </p>
+              <button class="main-banner__button button button_transparent">Download</button>
+            </div>
+            <form class="main-banner__form">
+              <h4 class="main-banner__form-title">
+                TRY YOUR <span class="text-red">FREE</span> TRIAL TODAY
+              </h4>
+              <div class="main-banner__inputs-container">
+                <input type="text" placeholder="Name" class="main-banner__input">
+                <input type="email" placeholder="Email" class="main-banner__input">
+                <input type="password" placeholder="Password" class="main-banner__input">
+              </div>
+              <button class="main-banner__auth-button button button_pink">Get Started</button>
+            </form>
+          </section>
+        </div>
+      </div>
       <div class="social-wrapper">
         <section class="social">
           <div class="social__header">
@@ -84,7 +125,7 @@
             <h2 class="section-title">
               WHY THIS IS AWESOME
             </h2>
-            <div class="section-separator">
+            <div class="section-separator separator">
             </div>
             <h5 class="section-desc">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -145,7 +186,7 @@
             <h2 class="section-title">
               PRICING OPTIONS
             </h2>
-            <div class="section-separator">
+            <div class="section-separator separator">
             </div>
             <h5 class="section-desc">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -254,7 +295,7 @@
             <h2 class="section-title">
               WHAT OUR CUSTOMEWS ARE SAYING
             </h2>
-            <div class="section-separator">
+            <div class="section-separator separator">
             </div>
             <h5 class="section-desc">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -319,7 +360,7 @@
               <h2 class="banner__title section-title">
                   STYLISH AXURE DESIGN
               </h2>
-              <div class="banner__separator section-separator">
+              <div class="banner__separator separator">
               </div>
               <h5 class="banner__desc section-desc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -337,13 +378,13 @@
             <h2 class="section-title">
               WHAT OUR CUSTOMEWS ARE SAYING
             </h2>
-            <div class="section-separator">
+            <div class="section-separator separator">
             </div>
             <h5 class="section-desc">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </h5>
           </div>
-          <form class="contact__form">
+          <form autocomplete="off" class="contact__form">
             <div class="contact__inputs-container">
               <input type="text" class="contact__input" placeholder="Name">
               <input type="email" class="contact__input" placeholder="Email">
@@ -355,5 +396,31 @@
         </div>
       </div>
     </div>
+    <footer class="footer">
+      <ul class="footer__links-list">
+        <li class="footer__link">
+          <img src="./public/img/footer/Facebook.svg">
+        </li>
+        <li class="footer__link">
+          <img src="./public/img/footer/Twitter.svg">
+        </li>
+        <li class="footer__link">
+          <img src="./public/img/footer/Linkedin.svg">
+        </li>
+        <li class="footer__link">
+          <img src="./public/img/footer/Pinterest.svg">
+        </li>
+        <li class="footer__link">
+          <img src="./public/img/footer/Instagram.svg">
+        </li>
+        <li class="footer__link">
+          <img src="./public/img/footer/Github.svg">
+        </li>
+        <li class="footer__link">
+          <img src="./public/img/footer/RSS.svg">
+        </li>
+      </ul>
+      <h5 class="footer__copyright">© 2015 Axure Themes</h5>
+    </footer>
   </body>
 </html>
