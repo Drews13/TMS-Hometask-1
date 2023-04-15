@@ -2,11 +2,8 @@
 /*common styles*/
 /*_____________________*/
 .section-title {
-  box-sizing: border-box;
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  padding: 54px 0;
 }
 
 .separator {
@@ -21,20 +18,13 @@
 }
 
 .section-desc {
-  margin: 40px 0 0 1px;
-  box-sizing: border-box;
-  height: 21px; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #86878B;
+  margin: 40px 0 0 0;
   text-align: center;
+  color: #86878B;
 }
 
 .button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   font-family: "Open Sans";
   font-weight: 600;
   transition-duration: 0.3s;
@@ -78,6 +68,21 @@
   color: #EC7979;
 }
 
+.input {
+  border: none;
+  border-bottom: 1px solid #BDBDBD;
+  outline: none;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  padding-bottom: 18px;
+}
+
+.input::placeholder {
+  color: #BDBDBD;
+}
+
 /*_____________________*/
 /*header styles*/
 /*_____________________*/
@@ -100,7 +105,7 @@
 
 .header__link {
   padding: 28px 0;
-  width: 114px;
+  min-width: 114px;
   color: #FFF;
   font-family: "Open Sans";
   font-size: 14px;
@@ -151,34 +156,34 @@
 
 .main-banner__separator {
   margin-top: 55.12px;
-  width: 170px;
+  max-width: 170px;
   height: 1px;
   background-color: #FFF;
 }
 
 .main-banner__desc {
   margin: 42px 0px;
-  width: 270px;
+  max-width: 270px;
   color: #FFF;
 }
 
 .main-banner__button {
-  width: 270px;
-  height: 58px;
+  min-width: 270px;
+  padding: 15px 0;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .main-banner__form {
-  width: 470px;
-  height: 450px;
+  max-width: 470px;
+  max-height: 450px;
   background-color: #FFF;
   border-radius: 0px 0px 10px 10px;
 }
 
 .main-banner__form-title {
-  height: 90px;
-  box-sizing: border-box;
   margin: 0 50px 45px 53px;
-  padding: 33px 0px;
+  padding: 29px 0px;
   color: #333;
   text-align: center;
 }
@@ -191,17 +196,12 @@
   gap: 33px;
 }
 
-.main-banner__input {
-  box-sizing: border-box;
-  height: 38px;
-  border: none;
-  border-bottom: 1px solid #BDBDBD;
-}
-
 .main-banner__auth-button {
-  width: 470px;
-  height: 60px;
+  min-width: 470px;
+  padding: 20px 0;
   border-radius: 0px 0px 10px 10px;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 /*_____________________*/
@@ -219,29 +219,29 @@
 }
 
 .social__header {
-  height: 120px;
+  min-height: 120px;
   display: flex;
-  width: 470px;
+  max-width: 470px;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .social__title {
-  height: 60px;
-  display: flex;
-  align-items: center;
+  padding: 14px 0;
 }
 
 .social__desc {
-  height: 42px;
+  color: #86878B;
 }
 
 .social__links-list {
-  width: 670px;
+  max-width: 670px;
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .social__link {
@@ -264,20 +264,18 @@
 }
 
 .tabs__column {
-  box-sizing: border-box;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 10px 0;
   font-family: "Open Sans";
   font-size: 14px;
   font-weight: 400;
-  width: 203px;
+  line-height: 20px;
+  min-width: 203px;
   text-align: center;
 }
   
 .tabs__column_active {
   border: 1px solid #C6CBCD;
+  border-radius: 5px 5px 0px 0px;
   border-bottom: none;
   position: relative;
 }
@@ -295,6 +293,7 @@
 .tabs__content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   border: 1px solid #C6CBCD;
   padding-top: 1px;
 }
@@ -307,24 +306,15 @@
 }
   
 .tabs__title {
-  box-sizing: border-box;
-  height: 124px;
-  display: flex;
-  align-items: center;
-  width: 570px;
-}
-  
-.tabs__desc {
-  height: 210px;
+  padding: 42px 0;
+  min-width: 570px;
 }
   
 .tabs__button {
   max-width: 270px; 
-  height: 58px;
-}
-
-.tabs__img {
-  display: block;
+  line-height: 24px;
+  font-size: 18px;
+  padding: 17px 0;
 }
 
 /*_____________________*/
@@ -332,7 +322,7 @@
 /*_____________________*/
 
 .about-wrapper {
-  padding: 25px 169px 58px 171px;
+  padding: 25px 170px 58px;
 }
 
 .about {
@@ -343,32 +333,27 @@
   margin-bottom: 71px;
 }
 
-.about__footer {
+.about__content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .about-column {
-  width: 370px;
+  min-width: 370px;
 }
 
 .about-column__icon-container {
-  display: flex;
-  justify-content: center;
+  padding: 0 100px;
 }
 
 .about-column__title {
   margin: 0px 0 8px 1px;
-  box-sizing: border-box;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 34px 0;
+  text-align: center;
 }
 
 .about-column__desc {
-  height: 105px;
   text-align: center;
 }
 
@@ -377,9 +362,8 @@
 /*_____________________*/
 
 .pricing-wrapper {
-  margin-left: 2px;
   background-color: #F5F5F5;
-  padding: 50px 170px 50px 168px;
+  padding: 50px 170px;
 }
 
 .pricing {
@@ -390,14 +374,14 @@
   margin-bottom: 79px;
 }
 
-.pricing__footer {
+.pricing__content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap
 }
 
 .pricing__column {
-  width: 370px;
+  min-width: 370px;
   transition-duration: 0.5s;
 }
 
@@ -406,39 +390,32 @@
 }
 
 .pricing__column-title {
-  box-sizing: border-box;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 12px 0;
+  text-align: center;
   background-color: #333333;
   color: #FFFFFF;
   border: 2px solid #F5F5F5;
 }
 
 .pricing__column-price {
-  box-sizing: border-box;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 28px 0;
+  text-align: center;
   background-color: #333333;
   color: #FFFFFF;
   border: 2px solid #F5F5F5;
 }
+
 .pricing__item-list {
   list-style: none;
 }
 
 .pricing__item {
-  box-sizing: border-box;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 13px 0;
+  text-align: center;
   background-color: #FFFFFF;
   color: #86878B;
   font-weight: 400;
+  line-height: 20px;
   border: 2px solid #F5F5F5;
 }
 
@@ -463,21 +440,19 @@
   margin-bottom: 83px;
 }
 
-.reviews__footer {
+.reviews__content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .reviews__column {
-  width: 370px;
+  min-width: 370px;
 }
 
 .reviews__text {
-  height: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 37.5px 0;
+  text-align: center;
   background-color: #E2E2E2;
   color: #86878B;
   border-radius: 10px;
@@ -502,18 +477,11 @@
 }
 
 .reviews__author-info {
-  width: 270px;
+  min-width: 270px;
 }
 .reviews__author-name {
-  height: 54px;
+  padding: 11px 0;
   margin-bottom: 15px;
-  display: flex;
-  align-items: center;
-}
-.reviews__author-position {
-  height: 21px;
-  display: flex;
-  align-items: center;
 }
 
 /*_____________________*/
@@ -557,8 +525,9 @@
 }
 
 .banner__button {
-  width: 370px;
-  height: 58px;
+  min-width: 370px;
+  line-height: 24px;
+  padding: 15px 0;
 }
 
 /*_____________________*/
@@ -578,44 +547,31 @@
 }
 
 .contact__form {
-  height: 362px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  gap: 50px;
 }
 
 .contact__inputs-container {
   width: 1170px;
-  height: 214px;
   display: flex;
+  max-height: 214px;
   flex-direction: column;
   justify-content: space-between;
   align-content: space-between;
   flex-wrap: wrap;
+  gap: 50px;
 }
 
 .contact__input {
-  box-sizing: border-box;
   width: 571px;
-  height: 38px;
-  border: none;
-  border-bottom: 1px solid #BDBDBD;
-  outline: none;
-  font-family: "Open Sans";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19.07px;
-  padding-bottom: 19px;
-}
-
-.contact__input::placeholder {
-  color: #BDBDBD;
 }
 
 .contact__message {
-  height: 214px;
   width: 569px;
+  height: 214px;
   resize: none;
   border: none;
   border-bottom: 1px solid #BDBDBD;
@@ -631,8 +587,9 @@
 }
 
 .contact__button {
-  width: 370px;
-  height: 58px;
+  min-width: 370px;
+  line-height: 24px;
+  padding: 17px 0;
 }
 
 /*_____________________*/
@@ -652,7 +609,7 @@
 }
 
 .footer__link {
-  height: 54px;
+  max-height: 54px;
   cursor: pointer;
 }
 
