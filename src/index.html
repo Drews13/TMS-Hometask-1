@@ -2,29 +2,33 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/main-styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
   </head>
   <body>
-    <header class="header">
-      <img src="./public/img/header/Logo.svg" class="header__logo">
-      <nav>
-        <ul class="header__link-list">
-          <li class="header__link">Features</li>
-          <li class="header__link">About</li>
-          <li class="header__link">Pricing</li>
-          <li class="header__link">Reviews</li>
-          <li class="header__link">Contact</li>
-        </ul>
-      </nav>
-    </header>
+    <div class="header-wrapper">
+      <header class="header">
+        <img src="./public/img/header/Logo.svg" class="header__logo">
+        <nav>
+          <ul class="header__link-list">
+            <li class="header__link">Features</li>
+            <li class="header__link">About</li>
+            <li class="header__link">Pricing</li>
+            <li class="header__link">Reviews</li>
+            <li class="header__link">Contact</li>
+          </ul>
+        </nav>
+      </header>
+    </div>
     <div class="content-wrapper">
       <div class="main-banner-wrapper">
         <div class="main-banner-wrapper__background">
           <section class="main-banner">
             <div class="main-banner__header">
-              <img src="./public/img/mainBanner/Logo.svg">
+              <img class="main-banner__logo" src="./public/img/mainBanner/Logo.svg">
               <h1 class="main-banner__title">
                 MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES
               </h1>
@@ -60,25 +64,25 @@
           </div>
           <ul class="social__links-list">
             <li class="social__link">
-              <img src="./public/img/social/Facebook.svg">
+              <img class="social__icon" src="./public/img/social/Facebook.svg">
             </li>
             <li class="social__link">
-              <img src="./public/img/social/Twitter.svg">
+              <img class="social__icon" src="./public/img/social/Twitter.svg">
             </li>
             <li class="social__link">
-              <img src="./public/img/social/Linkedin.svg">
+              <img class="social__icon" src="./public/img/social/Linkedin.svg">
             </li>
             <li class="social__link">
-              <img src="./public/img/social/Pinterest.svg">
+              <img class="social__icon" src="./public/img/social/Pinterest.svg">
             </li>
             <li class="social__link">
-              <img src="./public/img/social/Instagram.svg">
+              <img class="social__icon" src="./public/img/social/Instagram.svg">
             </li>
             <li class="social__link">
-              <img src="./public/img/social/Github.svg">
+              <img class="social__icon" src="./public/img/social/Github.svg">
             </li>
             <li class="social__link">
-              <img src="./public/img/social/RSS.svg">
+              <img class="social__icon" src="./public/img/social/RSS.svg">
             </li>
           </ul>
         </section>
@@ -98,25 +102,21 @@
           </div>
           <div class="tabs__content">
             <article class="tabs__left">
-              <h4 class="tabs__title">
+              <h3 class="tabs__title">
                 Tabs with soft transitioning effect
-              </h4>
+              </h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean<br>
-                euismod<br>
-                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et<br>
-                viverra<br>
-                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque<br>
-                penatibus et magnis dis parturient montes.<br><br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean<br>
-                euismod<br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                penatibus et magnis dis parturient montes.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                euismod
                 bibendum laoreet.
               </p>
               <button class="tabs__button button button_pink">Download</button>
             </article>
-            <div class="tabs__right">
-              <img src="./public/img/tabs/Rectangle 111.svg">
-            </div>
+            <img class="tabs__img" src="./public/img/tabs/Rectangle 111.svg">
           </div>
         </section>
       </div>
@@ -134,47 +134,41 @@
           </div>
           <div class="about__content">
             <div class="about-column">
-              <div class="about-column__icon-container">
-                <img src="./public/img/about/Bulb.svg" alt=""/>
-              </div>
+              <img class="about-column__icon" src="./public/img/about/Bulb.svg" alt=""/>
               <h4 class="about-column__title">
                 Thoughtful Design
               </h4>
               <p class="about-column__desc">
-                Lorem ipsum dolor sit amet, consectetur<br>
-                adipiscing<br>
-                elit. Aenean euismod bibendum laoreet.<br>
-                Proin gravida dolor sit amet lacus<br>
+                Lorem ipsum dolor sit amet, consectetur
+                adipiscing
+                elit. Aenean euismod bibendum laoreet.
+                Proin gravida dolor sit amet lacus
                 accumsan et viverra.
               </p>
             </div>
             <div class="about-column">
-              <div class="about-column__icon-container">
-                <img src="./public/img/about/Keyboard.svg" alt=""/>
-              </div>
+              <img class="about-column__icon" src="./public/img/about/Keyboard.svg" alt=""/>
               <h4 class="about-column__title">
                 Thoughtful Design
               </h4>
               <p class="about-column__desc">
-                Lorem ipsum dolor sit amet, consectetur<br>
-                adipiscing<br>
-                elit. Aenean euismod bibendum laoreet.<br>
-                Proin gravida dolor sit amet lacus<br>
+                Lorem ipsum dolor sit amet, consectetur
+                adipiscing
+                elit. Aenean euismod bibendum laoreet.
+                Proin gravida dolor sit amet lacus
                 accumsan et viverra.
               </p>
             </div>        
             <div class="about-column">
-              <div class="about-column__icon-container">
-                <img src="./public/img/about/Lightning.svg" alt=""/>
-              </div>
+              <img class="about-column__icon" src="./public/img/about/Lightning.svg" alt=""/>
               <h4 class="about-column__title">
                 Thoughtful Design
               </h4>
               <p class="about-column__desc">
-                Lorem ipsum dolor sit amet, consectetur<br>
-                adipiscing<br>
-                elit. Aenean euismod bibendum laoreet.<br>
-                Proin gravida dolor sit amet lacus<br>
+                Lorem ipsum dolor sit amet, consectetur
+                adipiscing
+                elit. Aenean euismod bibendum laoreet.
+                Proin gravida dolor sit amet lacus
                 accumsan et viverra.
               </p>
             </div>
@@ -312,7 +306,7 @@
                 quo suscipit.
               </p>
               <div class="reviews__author">
-                <img src="./public/img/reviews/Author_1.svg"></img>
+                <img class="reviews__img" src="./public/img/reviews/Author_1.svg"></img>
                 <div class="reviews__author-info">
                   <h4 class="reviews__author-name">Davis Rhiel Madsen</h4>
                   <p>Manager</p>
@@ -328,7 +322,7 @@
                 quo suscipit.
               </p>
               <div class="reviews__author">
-                <img src="./public/img/reviews/Author_2.svg"></img>
+                <img class="reviews__img" src="./public/img/reviews/Author_2.svg"></img>
                 <div class="reviews__author-info">
                   <h4 class="reviews__author-name">Jaydon Rosser</h4>
                   <p class="reviews__author-position">Manager</p>
@@ -344,7 +338,7 @@
                 quo suscipit.
               </p>
               <div class="reviews__author">
-                <img src="./public/img/reviews/Author_3.svg"></img>
+                <img class="reviews__img" src="./public/img/reviews/Author_3.svg"></img>
                 <div class="reviews__author-info">
                   <h4 class="reviews__author-name">Cooper Dorwart</h4>
                   <p class="reviews__author-position">Manager</p>
@@ -397,31 +391,33 @@
         </div>
       </div>
     </div>
-    <footer class="footer">
-      <ul class="footer__links-list">
-        <li class="footer__link">
-          <img src="./public/img/footer/Facebook.svg">
-        </li>
-        <li class="footer__link">
-          <img src="./public/img/footer/Twitter.svg">
-        </li>
-        <li class="footer__link">
-          <img src="./public/img/footer/Linkedin.svg">
-        </li>
-        <li class="footer__link">
-          <img src="./public/img/footer/Pinterest.svg">
-        </li>
-        <li class="footer__link">
-          <img src="./public/img/footer/Instagram.svg">
-        </li>
-        <li class="footer__link">
-          <img src="./public/img/footer/Github.svg">
-        </li>
-        <li class="footer__link">
-          <img src="./public/img/footer/RSS.svg">
-        </li>
-      </ul>
-      <p class="footer__copyright">© 2015 Axure Themes</p>
-    </footer>
+    <div class="footer-wrapper">
+      <footer class="footer">
+        <ul class="footer__links-list">
+          <li class="footer__link">
+            <img class="footer__icon" src="./public/img/footer/Facebook.svg">
+          </li>
+          <li class="footer__link">
+            <img class="footer__icon" src="./public/img/footer/Twitter.svg">
+          </li>
+          <li class="footer__link">
+            <img class="footer__icon" src="./public/img/footer/Linkedin.svg">
+          </li>
+          <li class="footer__link">
+            <img class="footer__icon" src="./public/img/footer/Pinterest.svg">
+          </li>
+          <li class="footer__link">
+            <img class="footer__icon" src="./public/img/footer/Instagram.svg">
+          </li>
+          <li class="footer__link">
+            <img class="footer__icon" src="./public/img/footer/Github.svg">
+          </li>
+          <li class="footer__link">
+            <img class="footer__icon" src="./public/img/footer/RSS.svg">
+          </li>
+        </ul>
+        <p class="footer__copyright">© 2015 Axure Themes</p>
+      </footer>
+    </div>
   </body>
 </html>
