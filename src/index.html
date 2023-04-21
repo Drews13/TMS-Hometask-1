@@ -7,11 +7,19 @@
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/main-styles.css">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
   </head>
   <body>
     <div class="header-wrapper">
       <header class="header">
         <img src="./public/img/header/Logo.svg" class="header__logo">
+        <input type="checkbox" id="burger">
+        <label class="header__burger" for="burger">
+          <img src="./public/img/header/Burger.svg">
+        </label>
+        <label class="header__cross" for="burger">
+          <img src="./public/img/header/Cross.svg">
+        </label>
         <nav>
           <ul class="header__link-list">
             <li class="header__link">Features</li>
@@ -346,6 +354,65 @@
               </div>
             </div>
           </div>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="reviews__column">
+                  <p class="reviews__text">
+                    Lorem ipsum dolor sit amet,<br>
+                    consectetur adipisicing elit. Doloribus<br>
+                    accusamus expedita repellat similique<br> 
+                    odio aspernatur ex, architecto eaque<br>
+                    quo suscipit.
+                  </p>
+                  <div class="reviews__author">
+                    <img class="reviews__img" src="./public/img/reviews/Author_1.svg"></img>
+                    <div class="reviews__author-info">
+                      <h4 class="reviews__author-name">Davis Rhiel Madsen</h4>
+                      <p>Manager</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews__column">
+                  <p class="reviews__text">
+                    Lorem ipsum dolor sit amet,<br>
+                    consectetur adipisicing elit. Doloribus<br>
+                    accusamus expedita repellat similique<br> 
+                    odio aspernatur ex, architecto eaque<br>
+                    quo suscipit.
+                  </p>
+                  <div class="reviews__author">
+                    <img class="reviews__img" src="./public/img/reviews/Author_2.svg"></img>
+                    <div class="reviews__author-info">
+                      <h4 class="reviews__author-name">Jaydon Rosser</h4>
+                      <p class="reviews__author-position">Manager</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews__column">
+                  <p class="reviews__text">
+                    Lorem ipsum dolor sit amet,<br>
+                    consectetur adipisicing elit. Doloribus<br>
+                    accusamus expedita repellat similique<br> 
+                    odio aspernatur ex, architecto eaque<br>
+                    quo suscipit.
+                  </p>
+                  <div class="reviews__author">
+                    <img class="reviews__img" src="./public/img/reviews/Author_3.svg"></img>
+                    <div class="reviews__author-info">
+                      <h4 class="reviews__author-name">Cooper Dorwart</h4>
+                      <p class="reviews__author-position">Manager</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
         </section>
       </div>
       <div class="banner-wrapper">
@@ -419,5 +486,7 @@
         <p class="footer__copyright">© 2015 Axure Themes</p>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
